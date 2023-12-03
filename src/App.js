@@ -8,8 +8,8 @@ import hazeIcon from "./assets/haze.png";
 import mistIcon from "./assets/mist.png";
 import rainIcon from "./assets/rain.png";
 import snowIcon from "./assets/snow.png";
-
 import "./App.css";
+require("dotenv").config();
 
 function App() {
     const [city, setCity] = useState("");
@@ -37,7 +37,7 @@ function App() {
 
     const searchLocation = async () => {
         setWeatherData(null);
-        const APIKey = "3e699a092a40ac34acd099e02314c7ff";
+        const APIKey = process.env.APIKey.toString();
         if (city === "") {
             return;
         }
