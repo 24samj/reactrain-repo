@@ -40,7 +40,7 @@ function App() {
 
     const searchLocation = async () => {
         setWeatherData(null);
-        const APIKey = process.env.REACT_APP_APIKey;
+        const APIKey = "3e699a092a40ac34acd099e02314c7ff";
         if (city === "") {
             return;
         }
