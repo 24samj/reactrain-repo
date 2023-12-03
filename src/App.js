@@ -1,3 +1,5 @@
+// Now you can import other modules
+import React from "react";
 import { useState } from "react";
 import axios from "axios";
 import SearchBar from "./components/SearchBar";
@@ -9,7 +11,8 @@ import mistIcon from "./assets/mist.png";
 import rainIcon from "./assets/rain.png";
 import snowIcon from "./assets/snow.png";
 import "./App.css";
-require("dotenv").config();
+
+// ... rest of your code
 
 function App() {
     const [city, setCity] = useState("");
@@ -37,7 +40,7 @@ function App() {
 
     const searchLocation = async () => {
         setWeatherData(null);
-        const APIKey = process.env.APIKey.toString();
+        const APIKey = process.env.REACT_APP_APIKey;
         if (city === "") {
             return;
         }
