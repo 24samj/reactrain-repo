@@ -1,4 +1,3 @@
-// Now you can import other modules
 import React from "react";
 import { useState } from "react";
 import axios from "axios";
@@ -11,8 +10,6 @@ import mistIcon from "./assets/mist.png";
 import rainIcon from "./assets/rain.png";
 import snowIcon from "./assets/snow.png";
 import "./App.css";
-
-// ... rest of your code
 
 function App() {
     const [city, setCity] = useState("");
