@@ -43,7 +43,7 @@ function App() {
         }
         try {
             const response = await axios.get(
-                `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${APIKey}`
+                `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${APIKey}`
             );
             setError(false);
             setWeatherData(response.data);
